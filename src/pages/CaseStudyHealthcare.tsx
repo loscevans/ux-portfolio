@@ -248,7 +248,7 @@ const CaseStudyHealthcare = () => {
               to="/case-study/ecommerce" 
               className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium"
             >
-              Next: E-commerce Mobile App Redesign
+              Next: Claro Internet Banking Platform
               <ArrowLeft className="w-4 h-4 rotate-180" />
             </Link>
           </div>
