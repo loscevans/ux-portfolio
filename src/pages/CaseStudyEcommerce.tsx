@@ -2,10 +2,8 @@ import Navigation from "@/components/Navigation";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const CaseStudyEcommerce = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       <div className="pt-32 pb-20 px-6">
@@ -38,7 +36,7 @@ const CaseStudyEcommerce = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <h3 className="font-semibold mb-2 text-foreground">Role</h3>
-                <p className="text-muted-foreground">Lead UX/UI Designer</p>
+                <p className="text-muted-foreground">UX Design Specialist</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2 text-foreground">Timeline</h3>
@@ -46,7 +44,7 @@ const CaseStudyEcommerce = () => {
               </div>
               <div>
                 <h3 className="font-semibold mb-2 text-foreground">Team</h3>
-                <p className="text-muted-foreground">2 UX Designers, 5 Developers, 1 Product Manager</p>
+                <p className="text-muted-foreground">2 UX Designers, 16 Developers, 1 Product Manager</p>
               </div>
             </div>
           </section>
@@ -258,18 +256,13 @@ const CaseStudyEcommerce = () => {
 
           {/* Next Project */}
           <div className="pt-12 border-t border-border">
-            <Link 
-              to="/case-study/healthcare" 
-              className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium"
-            >
+            <Link to="/case-study/healthcare" className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium">
               Next: Healthcare Dashboard Platform
               <ArrowLeft className="w-4 h-4 rotate-180" />
             </Link>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default CaseStudyEcommerce;
