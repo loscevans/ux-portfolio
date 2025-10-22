@@ -257,7 +257,7 @@ const CaseStudyEcommerce = () => {
           {/* Next Project */}
           <div className="pt-12 border-t border-border">
             <Link to="/case-study/healthcare" className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium">
-              Next: Healthcare Dashboard Platform
+              Next: Claro Pay Design System
               <ArrowLeft className="w-4 h-4 rotate-180" />
             </Link>
           </div>
