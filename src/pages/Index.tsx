@@ -16,10 +16,10 @@ const Index = () => {
     },
     {
       id: 2,
-      title: "Healthcare Dashboard Platform",
-      description: "Creating an intuitive dashboard for medical professionals to manage patient data",
-      tags: ["Dashboard", "Healthcare", "Data Visualization"],
-      image: "bg-gradient-to-br from-blue-500 to-cyan-500",
+      title: "Claro Pay Design System",
+      description: "Building a unified foundation for scalable, consistent product experiences",
+      tags: ["Design System", "Enterprise", "System Thinking"],
+      image: "bg-gradient-to-br from-purple-500 to-pink-500",
       link: "/case-study/healthcare"
     }
   ];
