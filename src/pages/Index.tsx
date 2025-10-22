@@ -8,10 +8,10 @@ const Index = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Mobile App Redesign",
-      description: "Redesigning the checkout flow to reduce cart abandonment by 35%",
-      tags: ["Mobile", "E-commerce", "User Research"],
-      image: "bg-gradient-to-br from-purple-500 to-pink-500",
+      title: "Claro Internet Banking Platform",
+      description: "B2B SaaS solution for internal Treasury operations and QR Code payment management",
+      tags: ["B2B SaaS", "Enterprise", "Financial Platform"],
+      image: "bg-gradient-to-br from-blue-600 to-cyan-600",
       link: "/case-study/ecommerce"
     },
     {

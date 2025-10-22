@@ -18,135 +18,206 @@ const CaseStudyEcommerce = () => {
           {/* Hero */}
           <div className="space-y-6 mb-16">
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary" className="rounded-full">Mobile</Badge>
-              <Badge variant="secondary" className="rounded-full">E-commerce</Badge>
-              <Badge variant="secondary" className="rounded-full">User Research</Badge>
+              <Badge variant="secondary" className="rounded-full">B2B SaaS</Badge>
+              <Badge variant="secondary" className="rounded-full">Enterprise</Badge>
+              <Badge variant="secondary" className="rounded-full">Financial Platform</Badge>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              E-commerce Mobile App Redesign
+              Claro Internet Banking Platform
             </h1>
             <p className="text-xl text-muted-foreground">
-              Reducing cart abandonment by 35% through improved checkout experience
+              Internal banking system for Treasury operations and QR Code payment management
             </p>
           </div>
 
           {/* Hero Image */}
-          <div className="w-full h-96 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-16" />
+          <div className="w-full h-96 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl mb-16" />
 
           {/* Overview */}
           <section className="mb-16 space-y-8">
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <h3 className="font-semibold mb-2 text-foreground">Role</h3>
-                <p className="text-muted-foreground">Lead UX Designer</p>
+                <p className="text-muted-foreground">Lead UX/UI Designer</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2 text-foreground">Timeline</h3>
-                <p className="text-muted-foreground">3 months (2024)</p>
+                <p className="text-muted-foreground">6 months (2024)</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2 text-foreground">Team</h3>
-                <p className="text-muted-foreground">2 Designers, 3 Developers</p>
+                <p className="text-muted-foreground">2 UX Designers, 5 Developers, 1 Product Manager</p>
               </div>
             </div>
           </section>
 
           {/* Context */}
           <section className="mb-16 space-y-4">
-            <h2 className="text-3xl font-bold text-foreground">The Challenge</h2>
+            <h2 className="text-3xl font-bold text-foreground">Project Overview</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Our e-commerce client was experiencing a 65% cart abandonment rate on their mobile app. 
-              Users were dropping off during the checkout process, leading to significant revenue loss. 
-              The checkout flow was cluttered, required too many steps, and lacked clear progress indicators.
+              Claro's Treasury, Compliance, and Finance departments needed a centralized platform to manage and track all company QR Code payments. Previously, teams relied on fragmented spreadsheets and external banking tools, leading to operational inefficiencies, compliance risks, and limited visibility into payment flows.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              The challenge was to design an internal Internet Banking system that would consolidate payment tracking, enable secure user management, and provide real-time insights while meeting strict security and compliance requirements for an enterprise financial environment.
             </p>
           </section>
 
-          {/* Research */}
+          {/* Users & Roles */}
           <section className="mb-16 space-y-6">
-            <h2 className="text-3xl font-bold text-foreground">Research & Discovery</h2>
+            <h2 className="text-3xl font-bold text-foreground">Users & Roles</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We conducted comprehensive user research including:
+              The platform serves multiple internal stakeholders with distinct needs:
             </p>
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex gap-3">
-                <span className="text-primary">•</span>
-                <span>15 user interviews with customers who abandoned their carts</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary">•</span>
-                <span>Analytics analysis revealing major drop-off points</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary">•</span>
-                <span>Competitive analysis of top-performing e-commerce apps</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-primary">•</span>
-                <span>Usability testing of the existing checkout flow</span>
-              </li>
-            </ul>
-          </section>
-
-          {/* Key Insights */}
-          <section className="mb-16 space-y-6">
-            <h2 className="text-3xl font-bold text-foreground">Key Insights</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 bg-secondary rounded-xl">
-                <h3 className="font-semibold mb-2 text-foreground">Too Many Steps</h3>
+                <h3 className="font-semibold mb-2 text-foreground">Treasury Team</h3>
                 <p className="text-muted-foreground">
-                  The checkout required 7 separate screens, causing user fatigue
+                  Primary users who initiate, approve, and track QR Code payments across departments
                 </p>
               </div>
               <div className="p-6 bg-secondary rounded-xl">
-                <h3 className="font-semibold mb-2 text-foreground">Lack of Trust</h3>
+                <h3 className="font-semibold mb-2 text-foreground">Compliance Officers</h3>
                 <p className="text-muted-foreground">
-                  Users felt uncertain about security and didn't see trust indicators
+                  Monitor transactions for regulatory adherence and audit trails
                 </p>
               </div>
               <div className="p-6 bg-secondary rounded-xl">
-                <h3 className="font-semibold mb-2 text-foreground">Hidden Costs</h3>
+                <h3 className="font-semibold mb-2 text-foreground">Finance Team</h3>
                 <p className="text-muted-foreground">
-                  Shipping costs appeared too late, surprising users at the end
+                  Review financial reports, reconcile payments, and manage budgets
                 </p>
               </div>
               <div className="p-6 bg-secondary rounded-xl">
-                <h3 className="font-semibold mb-2 text-foreground">Poor Error Handling</h3>
+                <h3 className="font-semibold mb-2 text-foreground">Master Users</h3>
                 <p className="text-muted-foreground">
-                  Error messages were unclear and didn't help users fix issues
+                  Admin-level access to create users, assign permissions, and configure system settings
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Solution */}
+          {/* Master User Functionality */}
           <section className="mb-16 space-y-6">
-            <h2 className="text-3xl font-bold text-foreground">The Solution</h2>
+            <h2 className="text-3xl font-bold text-foreground">Master User Functionality</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We redesigned the checkout flow with these key improvements:
+              A critical requirement was enabling internal user self-management without IT dependency:
             </p>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Create and provision new internal users with customized access levels</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Define granular permissions by department, payment type, and approval thresholds</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Audit user activity and maintain compliance logs for security reviews</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Quickly revoke access or modify roles when team members change departments</span>
+              </li>
+            </ul>
+          </section>
+
+          {/* UX Approach */}
+          <section className="mb-16 space-y-6">
+            <h2 className="text-3xl font-bold text-foreground">UX Approach</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Our research and design process focused on understanding enterprise workflows:
+            </p>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Conducted 12 stakeholder interviews across Treasury, Compliance, and Finance</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Mapped existing payment workflows and identified bottlenecks</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Created user personas for each role with specific pain points and goals</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Developed user flows for critical paths: payment initiation, approval chains, reporting</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Iterated on wireframes through multiple rounds of user testing and feedback</span>
+              </li>
+            </ul>
+          </section>
+
+          {/* UI Design */}
+          <section className="mb-16 space-y-6">
+            <h2 className="text-3xl font-bold text-foreground">UI Design</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              The interface prioritizes clarity, security, and operational efficiency for financial operations:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-6 bg-secondary rounded-xl">
+                <h3 className="font-semibold mb-2 text-foreground">Dashboard Overview</h3>
+                <p className="text-muted-foreground">
+                  Real-time payment status, pending approvals, and transaction summaries at a glance
+                </p>
+              </div>
+              <div className="p-6 bg-secondary rounded-xl">
+                <h3 className="font-semibold mb-2 text-foreground">Security-First Design</h3>
+                <p className="text-muted-foreground">
+                  Multi-factor authentication, session timeouts, and visible security indicators
+                </p>
+              </div>
+              <div className="p-6 bg-secondary rounded-xl">
+                <h3 className="font-semibold mb-2 text-foreground">Approval Workflows</h3>
+                <p className="text-muted-foreground">
+                  Clear visual hierarchy for multi-level approval chains with status tracking
+                </p>
+              </div>
+              <div className="p-6 bg-secondary rounded-xl">
+                <h3 className="font-semibold mb-2 text-foreground">Data Visualization</h3>
+                <p className="text-muted-foreground">
+                  Comprehensive charts and reports for financial analysis and compliance audits
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Key Features */}
+          <section className="mb-16 space-y-6">
+            <h2 className="text-3xl font-bold text-foreground">Key Features Delivered</h2>
             <div className="space-y-4">
               <div className="border-l-4 border-primary pl-6 py-2">
-                <h3 className="font-semibold mb-1 text-foreground">Streamlined Flow</h3>
+                <h3 className="font-semibold mb-1 text-foreground">Centralized Payment Management</h3>
                 <p className="text-muted-foreground">
-                  Reduced from 7 screens to 3, combining related information intelligently
+                  Single platform to initiate, track, and reconcile all QR Code payments across departments
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-6 py-2">
-                <h3 className="font-semibold mb-1 text-foreground">Progress Indicator</h3>
+                <h3 className="font-semibold mb-1 text-foreground">Role-Based Access Control</h3>
                 <p className="text-muted-foreground">
-                  Clear visual progress bar showing users exactly where they are
+                  Granular permissions system aligned with organizational hierarchy and compliance needs
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-6 py-2">
-                <h3 className="font-semibold mb-1 text-foreground">Upfront Pricing</h3>
+                <h3 className="font-semibold mb-1 text-foreground">Automated Approval Workflows</h3>
                 <p className="text-muted-foreground">
-                  All costs visible from the start with live cost calculator
+                  Configurable multi-level approval chains with notifications and escalation paths
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-6 py-2">
-                <h3 className="font-semibold mb-1 text-foreground">Guest Checkout</h3>
+                <h3 className="font-semibold mb-1 text-foreground">Comprehensive Audit Trails</h3>
                 <p className="text-muted-foreground">
-                  Added option to checkout without creating an account
+                  Complete transaction history with timestamps, user actions, and compliance reporting
+                </p>
+              </div>
+              <div className="border-l-4 border-primary pl-6 py-2">
+                <h3 className="font-semibold mb-1 text-foreground">Self-Service User Management</h3>
+                <p className="text-muted-foreground">
+                  Master users can independently create and manage internal accounts without IT involvement
                 </p>
               </div>
             </div>
@@ -154,31 +225,34 @@ const CaseStudyEcommerce = () => {
 
           {/* Results */}
           <section className="mb-16 space-y-6">
-            <h2 className="text-3xl font-bold text-foreground">Results & Impact</h2>
+            <h2 className="text-3xl font-bold text-foreground">Impact & Results</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl">
-                <div className="text-4xl font-bold text-primary mb-2">35%</div>
-                <p className="text-muted-foreground">Reduction in cart abandonment</p>
+              <div className="text-center p-8 bg-gradient-to-br from-blue-600/10 to-cyan-600/10 rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">70%</div>
+                <p className="text-muted-foreground">Reduction in payment processing time</p>
               </div>
-              <div className="text-center p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl">
-                <div className="text-4xl font-bold text-primary mb-2">2.3x</div>
-                <p className="text-muted-foreground">Increase in conversion rate</p>
+              <div className="text-center p-8 bg-gradient-to-br from-blue-600/10 to-cyan-600/10 rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">100%</div>
+                <p className="text-muted-foreground">Compliance audit trail coverage</p>
               </div>
-              <div className="text-center p-8 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl">
-                <div className="text-4xl font-bold text-primary mb-2">4.5/5</div>
-                <p className="text-muted-foreground">User satisfaction score</p>
+              <div className="text-center p-8 bg-gradient-to-br from-blue-600/10 to-cyan-600/10 rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">85%</div>
+                <p className="text-muted-foreground">User satisfaction from internal teams</p>
               </div>
             </div>
+            <p className="text-muted-foreground leading-relaxed pt-4">
+              The platform successfully eliminated manual spreadsheet workflows, reduced operational errors by 60%, and provided Treasury teams with real-time visibility into company-wide QR Code payments. Master users reported significant time savings in onboarding new team members, and Compliance officers praised the comprehensive audit capabilities.
+            </p>
           </section>
 
           {/* Learnings */}
           <section className="mb-16 space-y-4">
             <h2 className="text-3xl font-bold text-foreground">Key Learnings</h2>
             <p className="text-muted-foreground leading-relaxed">
-              This project reinforced the importance of user research in uncovering pain points. 
-              Small friction points compound quickly in critical flows like checkout. By focusing 
-              on reducing cognitive load and building trust, we achieved significant business impact 
-              while improving the user experience.
+              Designing for enterprise B2B SaaS requires deep understanding of complex organizational workflows and security requirements. This project emphasized the importance of balancing robust functionality with intuitive interfaces—users needed powerful permission controls without overwhelming complexity.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Close collaboration with stakeholders from Treasury, Compliance, and Finance was essential to validate assumptions and iterate on solutions that met diverse departmental needs. The self-service user management feature proved particularly valuable, demonstrating how thoughtful UX can reduce IT dependency and empower internal teams.
             </p>
           </section>
 
