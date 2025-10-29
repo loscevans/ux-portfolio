@@ -3,29 +3,23 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
-
 const Index = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Claro Internet Banking Platform",
-      description: "B2B SaaS solution for internal Treasury operations and QR Code payment management",
-      tags: ["B2B SaaS", "Enterprise", "Financial Platform"],
-      image: "bg-gradient-to-br from-blue-600 to-cyan-600",
-      link: "/case-study/ecommerce"
-    },
-    {
-      id: 2,
-      title: "Claro Pay Design System",
-      description: "Building a unified foundation for scalable, consistent product experiences",
-      tags: ["Design System", "Enterprise", "System Thinking"],
-      image: "bg-gradient-to-br from-purple-500 to-pink-500",
-      link: "/case-study/healthcare"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const projects = [{
+    id: 1,
+    title: "Claro Internet Banking Platform",
+    description: "B2B SaaS solution for internal Treasury operations and QR Code payment management",
+    tags: ["B2B SaaS", "Enterprise", "Financial Platform"],
+    image: "bg-gradient-to-br from-blue-600 to-cyan-600",
+    link: "/case-study/ecommerce"
+  }, {
+    id: 2,
+    title: "Claro Pay Design System",
+    description: "Building a unified foundation for scalable, consistent product experiences",
+    tags: ["Design System", "Enterprise", "System Thinking"],
+    image: "bg-gradient-to-br from-purple-500 to-pink-500",
+    link: "/case-study/healthcare"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -38,10 +32,7 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
               Crafting meaningful digital experiences
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl">
-              I'm a UX designer passionate about solving complex problems through research, 
-              empathy, and thoughtful design. Based in São Paulo, Brazil.
-            </p>
+            <p className="text-xl text-muted-foreground max-w-2xl">I'm a UX designer passionate about solving complex problems through research, empathy, and thoughtful design. Based in Rio de Janeiro, Brazil.</p>
           </div>
         </div>
       </section>
@@ -52,8 +43,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-12 text-foreground">Selected Work</h2>
           
           <div className="grid gap-8">
-            {projects.map((project) => (
-              <Link key={project.id} to={project.link}>
+            {projects.map(project => <Link key={project.id} to={project.link}>
                 <Card className="overflow-hidden border-border hover:border-primary transition-all duration-300 group cursor-pointer">
                   <CardContent className="p-0">
                     <div className="grid md:grid-cols-5 gap-0">
@@ -63,11 +53,9 @@ const Index = () => {
                       <div className="p-8 md:col-span-3 flex flex-col justify-center">
                         <div className="space-y-4">
                           <div className="flex flex-wrap gap-2">
-                            {project.tags.map((tag) => (
-                              <Badge key={tag} variant="outline" className="rounded-full">
+                            {project.tags.map(tag => <Badge key={tag} variant="outline" className="rounded-full">
                                 {tag}
-                              </Badge>
-                            ))}
+                              </Badge>)}
                           </div>
                           <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
                             {project.title}
@@ -83,8 +71,7 @@ const Index = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
       </section>
@@ -104,8 +91,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
