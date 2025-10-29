@@ -100,12 +100,6 @@ const Index = () => {
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 LinkedIn
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                Dribbble
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                Behance
-              </a>
             </div>
           </div>
         </div>
