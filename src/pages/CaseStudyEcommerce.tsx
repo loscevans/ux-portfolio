@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import dashboardImage from "@/assets/dashboard.png";
 const CaseStudyEcommerce = () => {
   return <div className="min-h-screen bg-background">
       <Navigation />
@@ -30,13 +29,7 @@ const CaseStudyEcommerce = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="w-full rounded-2xl mb-16 overflow-hidden">
-            <img 
-              src={dashboardImage} 
-              alt="Claro Internet Banking Platform Dashboard" 
-              className="w-full h-auto object-cover"
-            />
-          </div>
+          <div className="w-full h-96 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl mb-16" />
 
           {/* Overview */}
           <section className="mb-16 space-y-8">
