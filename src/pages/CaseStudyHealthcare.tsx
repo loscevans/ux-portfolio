@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import designSystemImage from "@/assets/design-system-mobile.png";
+import tokenSystemImage from "@/assets/token-system.png";
 
 const CaseStudyHealthcare = () => {
   return (
@@ -159,6 +160,15 @@ const CaseStudyHealthcare = () => {
                   Complete theme system with automatic light/dark mode switching
                 </p>
               </div>
+            </div>
+            
+            {/* Token System Visual */}
+            <div className="mt-8">
+              <img 
+                src={tokenSystemImage} 
+                alt="Token System Architecture"
+                className="w-full h-auto rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.18)] transition-shadow duration-300"
+              />
             </div>
           </section>
 
