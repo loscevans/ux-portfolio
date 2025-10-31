@@ -167,7 +167,7 @@ const CaseStudyHealthcare = () => {
               <img 
                 src={tokenSystemImage} 
                 alt="Token System Architecture"
-                className="w-full h-auto rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.18)] transition-shadow duration-300"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
           </section>
