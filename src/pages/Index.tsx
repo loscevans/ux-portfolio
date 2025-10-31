@@ -3,13 +3,14 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
+import dashboardImage from "@/assets/dashboard-ecommerce.png";
 const Index = () => {
   const projects = [{
     id: 1,
     title: "Claro Internet Banking Platform",
     description: "B2B SaaS solution for internal Treasury operations and QR Code payment management",
     tags: ["B2B SaaS", "Enterprise", "Financial Platform"],
-    image: "bg-gradient-to-br from-blue-600 to-cyan-600",
+    imageUrl: dashboardImage,
     link: "/case-study/ecommerce"
   }, {
     id: 2,
@@ -47,7 +48,14 @@ const Index = () => {
                 <Card className="overflow-hidden border-border hover:border-primary transition-all duration-300 group cursor-pointer">
                   <CardContent className="p-0">
                     <div className="grid md:grid-cols-5 gap-0">
-                      <div className={`${project.image} h-64 md:h-auto md:col-span-2 relative`}>
+                      <div className={`${project.imageUrl ? '' : project.image} h-64 md:h-auto md:col-span-2 relative overflow-hidden`}>
+                        {project.imageUrl ? (
+                          <img 
+                            src={project.imageUrl} 
+                            alt={project.title}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : null}
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                       </div>
                       <div className="p-8 md:col-span-3 flex flex-col justify-center">
