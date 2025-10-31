@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import designSystemImage from "@/assets/design-system-mobile.png";
 
 const CaseStudyHealthcare = () => {
   return (
@@ -31,7 +32,11 @@ const CaseStudyHealthcare = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="w-full h-96 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-16" />
+          <img 
+            src={designSystemImage} 
+            alt="Claro Pay Design System Mobile"
+            className="w-full h-auto rounded-2xl mb-16 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.18)] transition-shadow duration-300"
+          />
 
           {/* Overview */}
           <section className="mb-16 space-y-8">

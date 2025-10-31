@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import dashboardImage from "@/assets/dashboard-ecommerce.png";
+import designSystemImage from "@/assets/design-system-mobile.png";
 const Index = () => {
   const projects = [{
     id: 1,
@@ -17,7 +18,7 @@ const Index = () => {
     title: "Claro Pay Design System",
     description: "Building a unified foundation for scalable, consistent product experiences",
     tags: ["Design System", "Enterprise", "System Thinking"],
-    image: "bg-gradient-to-br from-purple-500 to-pink-500",
+    imageUrl: designSystemImage,
     link: "/case-study/healthcare"
   }];
   return <div className="min-h-screen bg-background">
@@ -48,14 +49,12 @@ const Index = () => {
                 <Card className="overflow-hidden border-border hover:border-primary transition-all duration-300 group cursor-pointer">
                   <CardContent className="p-0">
                     <div className="grid md:grid-cols-5 gap-0">
-                      <div className={`${project.imageUrl ? '' : project.image} h-64 md:h-auto md:col-span-2 relative overflow-hidden`}>
-                        {project.imageUrl ? (
-                          <img 
-                            src={project.imageUrl} 
-                            alt={project.title}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : null}
+                      <div className="h-64 md:h-auto md:col-span-2 relative overflow-hidden">
+                        <img 
+                          src={project.imageUrl} 
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
                       </div>
                       <div className="p-8 md:col-span-3 flex flex-col justify-center">
