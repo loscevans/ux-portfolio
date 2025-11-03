@@ -21,17 +21,6 @@ const Navigation = () => {
             >
               Work
             </Link>
-            <Link 
-              to="/about" 
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === "/about" ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              About
-            </Link>
-            <Button variant="default" size="sm" className="rounded-full">
-              Contact
-            </Button>
           </div>
         </div>
       </div>
