@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import CaseStudyEcommerce from "./pages/CaseStudyEcommerce";
 import CaseStudyHealthcare from "./pages/CaseStudyHealthcare";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/case-study/ecommerce" element={<CaseStudyEcommerce />} />
