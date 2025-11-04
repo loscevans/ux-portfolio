@@ -261,13 +261,29 @@ const CaseStudyEcommerce = () => {
 
           {/* Next Project */}
           <div className="pt-12 border-t border-border">
-            <Link to="/case-study/healthcare" className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium">
+            <Link to="/case-study/claro-pay-design-system" className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium">
               Next: Claro Pay Design System
               <ArrowLeft className="w-4 h-4 rotate-180" />
             </Link>
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="py-12 px-6 border-t border-border mt-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-muted-foreground text-sm">
+              © 2024 UX Portfolio. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <a href="https://www.linkedin.com/in/pdvscl/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>;
 };
 export default CaseStudyEcommerce;

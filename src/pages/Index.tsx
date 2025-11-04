@@ -91,7 +91,7 @@ const Index = () => {
               © 2024 UX Portfolio. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              <a href="https://www.linkedin.com/in/pdvscl/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 LinkedIn
               </a>
             </div>
