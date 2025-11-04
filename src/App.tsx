@@ -20,8 +20,8 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/case-study/ecommerce" element={<CaseStudyEcommerce />} />
-          <Route path="/case-study/healthcare" element={<CaseStudyHealthcare />} />
+          <Route path="/case-study/claro-internet-banking" element={<CaseStudyEcommerce />} />
+          <Route path="/case-study/claro-pay-design-system" element={<CaseStudyHealthcare />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -12,14 +12,14 @@ const Index = () => {
     description: "B2B SaaS solution for internal Treasury operations and QR Code payment management",
     tags: ["B2B SaaS", "Enterprise", "Financial Platform"],
     imageUrl: dashboardImage,
-    link: "/case-study/ecommerce"
+    link: "/case-study/claro-internet-banking"
   }, {
     id: 2,
     title: "Claro Pay Design System",
     description: "Building a unified foundation for scalable, consistent product experiences",
     tags: ["Design System", "Enterprise", "System Thinking"],
     imageUrl: designSystemImage,
-    link: "/case-study/healthcare"
+    link: "/case-study/claro-pay-design-system"
   }];
   return <div className="min-h-screen bg-background">
       <Navigation />
